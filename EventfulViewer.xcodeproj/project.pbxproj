@@ -14,7 +14,6 @@
 		859BC7E223618F4200D65209 /* EventfulViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 859BC7E023618F4200D65209 /* EventfulViewer.xcdatamodeld */; };
 		859BC7E423618F4400D65209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859BC7E323618F4400D65209 /* Assets.xcassets */; };
 		859BC7E723618F4400D65209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859BC7E523618F4400D65209 /* LaunchScreen.storyboard */; };
-		859BC7EF2361957400D65209 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859BC7EE2361957400D65209 /* DetailViewController.swift */; };
 		85B59CA42361AA7F0058504F /* mapIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B59CA12361AA7F0058504F /* mapIcon@2x.png */; };
 		85B59CA52361AA7F0058504F /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B59CA22361AA7F0058504F /* mapIcon.png */; };
 		85B59CA62361AA7F0058504F /* mapIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B59CA32361AA7F0058504F /* mapIcon@3x.png */; };
@@ -30,7 +29,6 @@
 		859BC7E323618F4400D65209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859BC7E623618F4400D65209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		859BC7E823618F4400D65209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859BC7EE2361957400D65209 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		85B59CA12361AA7F0058504F /* mapIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapIcon@2x.png"; sourceTree = "<group>"; };
 		85B59CA22361AA7F0058504F /* mapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapIcon.png; sourceTree = "<group>"; };
 		85B59CA32361AA7F0058504F /* mapIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapIcon@3x.png"; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				859BC7D923618F4200D65209 /* AppDelegate.swift */,
 				859BC7DB23618F4200D65209 /* ViewController.swift */,
 				859BC7DD23618F4200D65209 /* Main.storyboard */,
-				859BC7EE2361957400D65209 /* DetailViewController.swift */,
 				859BC7E323618F4400D65209 /* Assets.xcassets */,
 				859BC7E523618F4400D65209 /* LaunchScreen.storyboard */,
 				859BC7E823618F4400D65209 /* Info.plist */,
@@ -168,7 +165,6 @@
 				859BC7DC23618F4200D65209 /* ViewController.swift in Sources */,
 				859BC7E223618F4200D65209 /* EventfulViewer.xcdatamodeld in Sources */,
 				859BC7DA23618F4200D65209 /* AppDelegate.swift in Sources */,
-				859BC7EF2361957400D65209 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
