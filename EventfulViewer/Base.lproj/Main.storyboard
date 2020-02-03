@@ -22,34 +22,38 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgT-5u-jF9" userLabel="SearchField">
-                                <rect key="frame" x="20" y="753" width="342" height="30"/>
+                                <rect key="frame" x="20" y="118" width="342" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kG-3v-GG0" userLabel="SearchButton">
-                                <rect key="frame" x="372" y="761" width="22" height="22"/>
+                                <rect key="frame" x="372" y="118" width="22" height="22.5"/>
                                 <state key="normal" image="searchBut.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Lf-Gm-HGq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CgT-5u-jF9" secondAttribute="bottom" constant="30" id="0JI-sc-SJ3"/>
                             <constraint firstItem="CgT-5u-jF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ebi-IM-CAC"/>
+                            <constraint firstItem="CgT-5u-jF9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="K6r-1o-j12"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="63B-yp-J1m" secondAttribute="bottom" id="MFF-Kq-tA2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="63B-yp-J1m" secondAttribute="trailing" id="PHD-ob-bMr"/>
                             <constraint firstItem="63B-yp-J1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bRc-0p-RIs"/>
                             <constraint firstItem="63B-yp-J1m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eww-on-xo1"/>
                             <constraint firstItem="4kG-3v-GG0" firstAttribute="leading" secondItem="CgT-5u-jF9" secondAttribute="trailing" constant="10" id="eyP-Aw-CfN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4kG-3v-GG0" secondAttribute="bottom" constant="30" id="q2K-Lj-9lL"/>
+                            <constraint firstItem="4kG-3v-GG0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="kcc-jd-R0m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4kG-3v-GG0" secondAttribute="trailing" constant="20" id="t9E-b8-oCp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ufM-gS-dsV"/>
                     <connections>
+                        <outlet property="mapKitView" destination="63B-yp-J1m" id="k8N-E6-OTZ"/>
                         <outlet property="searchButton" destination="4kG-3v-GG0" id="YVW-uz-Q3f"/>
                         <outlet property="searchField" destination="CgT-5u-jF9" id="51i-s1-JqZ"/>
                     </connections>
@@ -57,6 +61,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1779.7101449275365" y="665.625"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="xYj-Iy-8OP">
+            <objects>
+                <viewController storyboardIdentifier="DetailView" id="foj-Qw-Jlj" customClass="DetailViewController" customModule="EventfulViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kJd-sg-js8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VEC-dL-ZaA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8LF-Wi-dw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="1352.6785714285713"/>
         </scene>
         <!--Map-->
         <scene sceneID="1B7-yM-OXm">
@@ -71,6 +90,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hLY-5l-BpI"/>
+                        <segue destination="foj-Qw-Jlj" kind="presentation" identifier="DetailViewController" id="nm2-Nv-StN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g8-B5-bTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
